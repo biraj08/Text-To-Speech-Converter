@@ -1,0 +1,132 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.hero
+{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.hero h1
+{
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: -50px;
+    margin-bottom: 50px;
+
+}
+
+.hero h1 span
+{
+    color: red;
+}
+
+textarea{
+    width: 600px;
+    height: 250px;
+    background: #403d84;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder
+{
+    font-size: 16px;
+    color: #ddd;
+}
+
+.row
+
+{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ 
+}
+
+
+select
+{
+    flex: 1;
+    color: #fff;
+    background-color: #403d84;   /*#440C60*/
+    height: 50px;
+    padding: 0 2px;
+    outline: 0;
+    border: 2;
+    border-radius: 35px;
+    padding-left: 20px;
+}
+
+
+
+button
+{
+    background-color: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    outline: 0;
+    border: 0.5px solid rgb(149, 255, 0);
+    border-radius: 35px;
+    cursor: pointer;;
+
+}
+
+
+
+
+
+
+/* Default styles (for devices with a screen width of 600px or larger) */
+/* ... (your existing styles) ... */
+
+/* Responsive styles for smaller screens (mobile devices) */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 36px;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+
+    textarea {
+        width: calc(100% - 40px);
+        height: 200px;
+        font-size: 14px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+
+    select {
+        height: 40px;
+        padding: 0 10px;
+    }
+}
